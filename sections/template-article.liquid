@@ -9,16 +9,16 @@
                   </div>
               </div>
           {% when 'article_author' %}
-              <div class="flex items-center justify-center">
-                  <div class="max-w-7xl text-center ">
+              <div class="flex items-center justify-center py-8">
+                  <div class="max-w-7xl text-center">
                       {% if section.settings.enable_author %}
                           <small>{{ article.author }}</small>
                       {% endif %}
                   </div>
               </div>
           {% when 'article_published_date' %}
-              <div class="flex items-center justify-center">
-                  <div class="max-w-7xl text-center">
+              <div class="flex items-center justify-center py-5">
+                  <div class="max-w-7xl text-center ">
                       {% if section.settings.enable_published_date %}
                           <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: format: 'on_date' }}</time>
                       {% endif %}
