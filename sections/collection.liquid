@@ -1,8 +1,0 @@
-{% paginate collection.products by 6 %}
-  {% for product in collection.products %}
-    
-    {% else %}
-      <p>Sold Out No Products avalable</p>
-  {% endfor %}
-  {% render 'pagination' %}
-{% endpaginate %}
