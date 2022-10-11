@@ -1,14 +1,22 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css/">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 <div class="max-w-6xl mx-auto my-8">
-  <div class="grid grid-cols-1 md:grid-col-2 gap-3">
-    <div class="product--medias">
-      <div class="hidden md:block">
-        {% for media in product.media %}
-          <div class="h-100 overflow-hidden p-2">
-            {% render 'product-media' %}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div class="product--medias">
+          <div class="hidden md:block">
+              {% for media in product.media %}
+                  <div class="h-100 overflow-hidden p-2">
+                      {% render 'product-media', media: media %}
+                  </div>
+              {% endfor %}
           </div>
-        {% endfor %}
+
+          <div class="md:hidden">
+            <div class="swiper h-94 "></div>
+          </div>
       </div>
-    </div>
-    <dvi class="product--information"></dvi>
+
+      <div class="product--information"></div>
   </div>
 </div>
