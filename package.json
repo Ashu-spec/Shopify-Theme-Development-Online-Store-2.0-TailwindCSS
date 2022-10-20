@@ -1,25 +1,25 @@
 {
-  "name": "shopify-theme-development-online-store-2.0tailwindcss",
+  "name": "elizabeth",
   "version": "1.0.0",
-  "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ashu-spec/Shopify-Theme-Development-Online-Store-2.0-TailwindCSS.git"
+    "url": "git+https://github.com/bbbpppolly/Elizabeth.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ashu-spec/Shopify-Theme-Development-Online-Store-2.0-TailwindCSS/issues"
+    "url": "https://github.com/bbbpppolly/Elizabeth/issues"
   },
-  "homepage": "https://github.com/Ashu-spec/Shopify-Theme-Development-Online-Store-2.0-TailwindCSS#readme",
+  "homepage": "https://github.com/bbbpppolly/Elizabeth#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.2.0"
   }
 }
