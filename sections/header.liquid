@@ -12,7 +12,13 @@
         NAVIGATION MENU
       {%- endcomment -%}
       {% for link in section.settings.menu.links %}
-        {{ links }}
+        {% if link.links !=blank %}
+          <div class="relative">
+            <button class="inline-flex items-center">
+              {{ link.title }}
+            </button>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
