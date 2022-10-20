@@ -2,8 +2,28 @@
   <div class="mx-auto px-4 sm:px-6">
     <div class="flex justify-center items-center py-6 md:justify-start md:space-x-10">
       {%- comment -%} Store Name {%- endcomment -%}
+      <div class="flex justify-start lg:flex-1 truncate">
+        <h1 class="text-xl font-bold truncate">{{ shop.name }}</h1>
+      </div>
       {%- comment -%} Navigation {%- endcomment -%}
+      <div class="hidden md:flex space-x-10">
+        {% for link in section.settings.menu.links %}
+          
+        {% endfor %}
+      </div>
       {%- comment -%} Cart Button / Account Links {%- endcomment -%}
     </div>
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "lable": "Heading Navigation Menu"
+    }
+  }
+{% endschema %}
