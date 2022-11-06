@@ -42,4 +42,4 @@ If you're not a student, you can still use this repository to start a new Shopif
 
 npx tailwindcss -i src/style.css -o assets/application.css --watch
 
-just some commites
+
